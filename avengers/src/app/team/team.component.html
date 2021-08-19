@@ -1,0 +1,9 @@
+<h1>The team</h1>
+<ul>
+  <li *ngFor="let member of members">
+    <img [src]="member.pictureUrl">
+    <div>{{member.codeName | titlecase}}</div>
+    <div>{{member.name | titlecase}}</div>
+    <div>{{member.role | titlecase}}</div>
+  </li>
+</ul>
